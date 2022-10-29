@@ -1,1 +1,1 @@
-# django-cognito-social-login
+# Django AWS Cognito Social Login
