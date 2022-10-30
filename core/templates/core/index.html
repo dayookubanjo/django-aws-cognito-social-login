@@ -7,11 +7,11 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>This is my home page.</h1>
+    <h1>This is our home page.</h1>
     {% if status == 0 %}
     <a href="https://chowrite.auth.us-east-1.amazoncognito.com/login?client_id=6gobg15ql2ojg47jn28ji9dv9g&response_type=code&scope=aws.cognito.signin.user.admin+email+openid+phone+profile&redirect_uri=http://localhost:8000">Sign In</a>
     {% elif status == 1 %}
-    <h1>{{ name }}</h1>
+    <h3 style="color: green;">Hi {{ name }}!</h3>
     <a href="https://chowrite.auth.us-east-1.amazoncognito.com/logout?client_id=6gobg15ql2ojg47jn28ji9dv9g&logout_uri=http://localhost:8000/signout">Sign Out</a>
     {% endif %}
 </body>
